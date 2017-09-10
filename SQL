@@ -9,3 +9,12 @@ WHERE CustomerName LIKE '%e';
 Удалить всех клиентов из города Nantes. Прислать запрос и результат (DELETE).
 DELETE FROM Customers
 WHERE City='Nantes';
+
+4. Изменить собственное имя, вставленное в таблицу Customers (UPDATE, SELECT), сделать скриншот и прислать запрос.
+UPDATE Customers
+SET ContactName = 'Petr the Great', City= '	Moscow'
+WHERE CustomerID = 101;
+
+3. Прислать запрос и скриншот с Вашим именем, вставленным в таблицу Customers (INSERT, SELECT).
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Lyapnev Petr', '	Novosibirsk', 'Russia');
