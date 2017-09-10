@@ -1,0 +1,11 @@
+ Посмотреть, сколько клиентов из Германии (SELECT, WHERE, COUNT).
+SELECT * FROM  Customers
+WHERE Country='Germany';
+
+ Посмотреть, имена скольких клиентов оканчиваются на на 'e' (LIKE)
+ SELECT * FROM  Customers
+WHERE CustomerName LIKE '%e';
+
+Удалить всех клиентов из города Nantes. Прислать запрос и результат (DELETE).
+DELETE FROM Customers
+WHERE City='Nantes';
